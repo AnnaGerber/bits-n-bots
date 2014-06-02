@@ -2,6 +2,7 @@ var five = require("johnny-five"),
   board, photores;
 
 board = new five.Board();
+//board = new five.Board({port: "/dev/tty.usbserial-A9GF3L9D" });
 
 board.on("ready", function() {
   photores = new five.Sensor({

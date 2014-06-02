@@ -1,6 +1,7 @@
 var five = require("johnny-five");
 
-five.Board({port: "/dev/tty.usbserial-A9GF3L9D" }).on("ready", function() {
+//five.Board({port: "/dev/tty.usbserial-A9GF3L9D" })
+five.Board().on("ready", function() {
   var val = 0;
   var piezoPin = 3;
   // Set pin 9 to PWM mode

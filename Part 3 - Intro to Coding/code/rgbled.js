@@ -1,5 +1,6 @@
 var j5 = require("johnny-five");
-var myBoard = new j5.Board({port: "/dev/tty.usbserial-A9GF3L9D" });
+//var myBoard = new j5.Board({port: "/dev/tty.usbserial-A9GF3L9D" });
+var myBoard = new j5.Board();
 myBoard.on("ready", function() {
   var myLed = new j5.Led.RGB([ 9, 10, 11 ]);
   // make the LED red

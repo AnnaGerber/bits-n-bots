@@ -1,6 +1,7 @@
 var five = require("johnny-five"),
-  board = new five.Board({port: "/dev/tty.usbserial-A9GF3L9D" });
-
+  // board = new five.Board({port: "/dev/tty.usbserial-A9GF3L9D" });
+  board = new five.Board();
+  
 board.on("ready", function() {
   var piezo = new five.Piezo(3);
 
